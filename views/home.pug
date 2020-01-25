@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+  include common/head.pug
+  +head("MS Home")
+  body
+    header
+      .container
+        .row.align-items-center
+          .col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.order-md-1.text-center
+            h1.mb-3 Movie Server Home Page
+        .row.align-items-center
+          .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.text-center.form-group
+            a(href="http://192.168.1.85:8888/status.html" role="button").btn.btn-primary.btn-lg.btn-block RPi Monitor
+          .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.text-center.form-group
+            a(href="http://192.168.1.85:9091/transmission/web/" role="button").btn.btn-primary.btn-lg.btn-block Transmission
+          .col-12.col-sm-12.col-md-12.col-lg-4.col-xl-4.text-center.form-group
+            a(href="http://192.168.1.85:32400/web/index.html#" role="button").btn.btn-primary.btn-lg.btn-block Plex
+    include common/footer.pug
+    +footer()
